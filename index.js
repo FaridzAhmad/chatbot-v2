@@ -254,6 +254,10 @@ async function startHisoka() {
       console.log(color("", "yellow"));
       console.log(color("Type /menu to see menu"));
       client.sendMessage(botNumber, { text: `Bot Aktif!` });
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Hello from WhatsApp Web function" }),
+      };
     }
     // console.log('Connected...', update)
   });

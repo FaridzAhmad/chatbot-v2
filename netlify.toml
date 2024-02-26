@@ -1,5 +1,5 @@
 [build]
-  command = "node index.js"
-  publish = "."
+  command = "npm run build"
+  publish = "./index.js"
 [dev]
   command = "npm run start"
